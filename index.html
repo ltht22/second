@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hoc javascript cung hoc dan IT</title>
+</head>
+<script src="tt.js">
+
+</script>
+<body>
+    <h1> Hoc javascript</h1>
+    <h2>JavaScript Expressions</h2>
+
+    <p>Expressions compute to values.</p>
+
+    <p id="demo"></p>
+
+    <script>
+    const person ={
+        firstName: "John",
+        lastName: "Doe",
+        id: 5566,
+        fullName: function(){
+            return this.firstName+ " " +this.lastName;//this ở đây đề cập đối tượng toàn cầu
+        }
+        
+
+    };
+    const car={
+        color: "red",
+        id: 7712,
+        type: "Honda",
+
+    }
+    console.log(car.color);
+    
+    document.getElementById("demo").innerHTML = person.fullName();
+
+    
+
+    </script>
+
+
+    
+</body>
+</html>
